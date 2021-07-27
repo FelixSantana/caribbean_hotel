@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', 'sans-serif';
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: #80D0C7 !important;
+
+}
+.navbar li{
+    margin-right: 50px;
+}
+
+.main{
+    background-image: linear-gradient(rgba(16, 16, 16, 0.548), rgba(16, 16, 16, 0.541)), url(/img/vacation.jpg);
+    background-size:cover;
+    height: 600px;
+}
+.main h1{
+    font-weight: 700;
+}
+.main h3{
+    font-weight: 400;
+}
+.main i{
+    display: block;
+    font-size: 1.5em;
+}
+.main button{
+    background-color: rgba(255, 255, 255, 0.281);
+    border: 1px solid white;
+    width: 100px;
+}
+.main a{
+    display: none;
+    font-size: .9em;
+}
+.main button:hover a{
+   display: contents;
+}
+.about{
+    height:max-content !important;
+}
+h1{
+    color: #0093E9;
+}
+.divider{
+    background-color: #0093E9;
+    width: 110px;
+    height: 3px;
+}
+
+.about p{
+    font-size: 1.2em;
+}
+
+
+.service-info h4{
+    color: #0b1920;
+    background-color: #03c9b2;
+}
+
+.reservation{
+    background-image: url(/img/girl.jpg);
+    background-size: cover;
+    height: 600px;
+}
+.reservation input{
+    background-color: rgba(255, 255, 255, 0.281);
+}
+.reservation textarea{
+    background-color: rgba(255, 255, 255, 0.281);
+}
+.reservation select{
+    background-color: rgba(255, 255, 255, 0.281);
+}
+.reservation .btn-reserve{
+    width: fit-content;
+    border: 1px solid white;
+}
+.support{
+    background-color: #29796e;
+    height: auto;
+}
+
+.contact .info-box {
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    background:#03c9b2;
+  }
+  .contact .info-box i.fas, i.far {
+    font-size: 30px;
+    color: #355d79;
+    border-radius: 50%;
+    padding: 10px;
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+}
+.contact .info-box h3 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+  }
+  
+  .contact .info-box p {
+    padding: 0;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+  }
+  
+  .contact .info-box .social-links {
+    margin: 5px 0 0 68px;
+    display: flex;
+  }
+  
+  .contact .info-box .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    margin-right: 12px;
+    transition: 0.3s;
+  }
+  .contact .info-box .social-links a:hover {
+    color: #0099FF;
+  }
+footer{
+    background:#29796e ;
+}
+.links a:hover{
+    background-color: #5fb0df;
+
+}
+@media (max-width:991px) {
+    .about .container{
+        flex-direction: column;
+    }
+    .about .container .row .carousel.slide .carousel-item img{
+        width: 450px !important;
+        height: 300px !important;
+    }
+    footer .row{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    footer .brand-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 23px;
+    }
+    footer .links h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
+@media all and (min-width: 992px) {
+    .navbar a:hover{
+        background-color: #5fb0df;
+    
+    }
+}
+@media (max-width:679px) {
+    .support{
+        flex-direction: column;
+    }
+    .support h1{
+        font-size: 2em !important;
+    }
+
+    
+}
+@media (max-width:341px) {
+    .support h1{
+        font-size: 1.8em !important;
+    }
+
+    
+}
